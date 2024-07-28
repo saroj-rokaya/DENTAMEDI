@@ -16,9 +16,11 @@ const NavbarSecond = () => {
                     <div className='h-14 border-4 border-transparent flex justify-center items-center hover:border-b-4 hover:border-b-blue-300 cursor-pointer'>Landing</div>
                 </div>
                 <div className='flex justify-center items-center gap-10'>
-                    <div className='flex justify-center items-center gap-2'><BsGlobe className='text-xl '/><span>English</span></div>
-                    <div><IoBagOutline className=' text-xl' /></div>
-                    <div className='underline'>Book free appointment</div>
+                    <div className='flex justify-center items-center gap-2 cursor-pointer'><BsGlobe className='text-xl '/><span>English</span></div>
+                    <div className='relative cursor-pointer'><IoBagOutline className=' text-xl' /> 
+                    <span className='h-5 w-5 rounded-full bg-blue-20-0 absolute top-[-6px] right-[-10px] text-white flexCenter text-[15px]'>0</span>
+                     </div>
+                    <div className='underline cursor-pointer'>Book free appointment</div>
                 </div>
 
 

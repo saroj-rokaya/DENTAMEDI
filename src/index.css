@@ -1,3 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    @apply font-['Gabarito'];
+}
+
+@layer components {
+
+    .btn-blue {
+        @apply text-white bg-[#5eb2f2] sm:px-8 sm:py-4 px-6 py-3 rounded-bl-2xl rounded-tr-2xl hover:rounded-bl-none hover:rounded-tr-none duration-500 ease-in-out
+    }
+
+    .btn-dark-blue {
+        @apply text-white bg-[#013a65] sm:px-8 sm:py-4 px-6 py-3 rounded-bl-2xl rounded-tr-2xl hover:rounded-bl-none hover:rounded-tr-none duration-500 ease-in-out
+    }
+
+    .container-size {
+        @apply w-full mx-auto p-10
+    }
+
+    /* flex div */
+    .flexCenter {
+        @apply flex justify-center items-center
+    }
+
+    .flexBetween {
+        @apply flex justify-between items-center
+    }
+
+    .flexStart {
+        @apply flex justify-start items-center
+    }
+
+    .flexEnd {
+        @apply flex justify-end items-center
+    }
+
+    /* fonts  */
+    .font-14 {
+        @apply text-[14px]
+    }
+    .font-16 {
+        @apply text-[16px]
+    }
+
+    .font-18 {
+        @apply text-[18px]
+    }
+
+    .font-20 {
+        @apply text-[20px]
+    }
+
+    .font-24 {
+        @apply text-[23px] font-semibold
+    }
+}

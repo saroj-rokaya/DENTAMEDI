@@ -5,11 +5,13 @@ import { FaClock, FaPhone, FaLocationDot, FaAngleRight } from "react-icons/fa6";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import NavbarSecond from './NavbarSecond';
+import { FaAngleDown } from "react-icons/fa6";
 
 
 const Navbar = () => {
 
     const [isopen, setIsopen] = useState(false)
+    const [issubmentopen, setIssubmenuopen]=useState(false);
     return (
         <>
             <div className='hidden px-10 xl:flex justify-between items-center py-5 h-24 text-[15px]'>
@@ -54,11 +56,22 @@ const Navbar = () => {
                     }
 
                 </div>
-                <div className={`fixed flex flex-col justify-start bg-gray-100 w-full duration-1000 h-60
-                    ${isopen ? "h-60" : "h-0 top-[-100]"}`}>
-                    <div className='flex w-full justify-between items-center px-[7%] lg:px-20 h-10 cursor-default hover:underline decoration-[#5eb2f2]'>
-                        <p>Home</p>
-                        <FaAngleRight />
+                <div className={`fixed flex flex-col justify-start bg-gray-100 w-full duration-1000 ease-in-out 
+                    ${isopen ? "block" : "hidden"}`}>
+                    <div className='flex flex-col w-full justify-between  items-center px-[7%] lg:px-20  cursor-default'>
+                        <div className='flex justify-between w-full items-center' onClick={()=>setIssubmenuopen(!issubmentopen)}>
+                            <p className='hover:underline decoration-[#93c1dd]'>Home</p>
+                            {issubmentopen ? <FaAngleDown /> : <FaAngleRight /> }
+                            
+                        </div>
+                        <div className={`px-[4%] flex flex-col justify-center items-start gap-1 w-full duration-1000 ease-in-out ${issubmentopen ? "block" : "hidden"}`}>
+                            <div className='hover:underline decoration-[#93c1dd]'>Main Home</div>
+                            <div className='hover:underline decoration-[#93c1dd]'>Orthodontic Clinic</div>
+                            <div className='hover:underline decoration-[#93c1dd]'>Dental Tourism</div>
+                            <div className='hover:underline decoration-[#93c1dd]'>General Dentist</div>
+                            <div className='hover:underline decoration-[#93c1dd]'>Customic Dentistry</div>
+                            <div className='hover:underline decoration-[#93c1dd]'>Dental Shop</div>
+                        </div>
                     </div>
                     <div className='flex w-full justify-between items-center lg:px-20 px-[7%] h-10 cursor-default hover:underline decoration-[#5eb2f2]'>
                         <p>Pages</p>
@@ -74,7 +87,6 @@ const Navbar = () => {
                     </div>
                     <div className='flex w-full justify-between items-center lg:px-20 px-[7%] h-10 cursor-default hover:underline decoration-[#5eb2f2]'>
                         <p>Landing</p>
-                        <FaAngleRight />
                     </div>
                 </div>
             </div>
