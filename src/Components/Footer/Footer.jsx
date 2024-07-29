@@ -6,12 +6,12 @@ const Footer = () => {
         <>
 
 
-            <div className='container-size sm:flex felx-col min-h-28 text-white  bg-blue-40-0 justify-between items-center px-10'>
-                <p className='font-gabarito font-20'>Ready to get the smile you always deserved?</p>
-                <button className='btn-blue mt-10 sm:mt-0'>BOOK APPOINTMENT</button>
+            <div className='container-size sm:flex flex md:flex-row flex-col min-h-28 text-white  bg-blue-40-0 justify-between items-center px-6 sm:px-6 lg:px-10'>
+                <p className='font-gabarito font-20 text-center'>Ready to get the smile you always deserved?</p>
+                <button className='btn-blue mt-10 md:mt-0'>BOOK APPOINTMENT</button>
             </div>
             <footer className=" text-white bg-blue-30-0 font-20">
-                <div className="mx-auto max-w-screen-2xl px-4 pt-16 sm:px-6 lg:space-y-16 lg:px-10">
+                <div className="container-size px-4 pt-16 sm:px-6 lg:space-y-16 lg:px-10">
                     <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                         <div>
                             <img src={logo} alt="logo" className='h-12' />

@@ -9,15 +9,21 @@ export default {
       colors: {
         // text color
         blue: {
-          10:['#5eb2f2'],
-          20:['#3d95d8'],
+          10: ['#5eb2f2'],
+          20: ['#3d95d8'],
           30: ["#013a65"],
-          40:['#002744'],
+          40: ['#002744'],
         }
       },
+
+      backgroundImage: {
+        herobg: "url('../../assets/herobg.jpeg')"
+      },
+
       fontFamily: {
         gabarito: ['Gabarito', 'sans-serif']
       }
+
     },
   },
   plugins: [],

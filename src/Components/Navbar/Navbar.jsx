@@ -48,7 +48,7 @@ const Navbar = () => {
             {/* responsive design */}
 
             <div className='xl:hidden h-20'>
-                <div className='h-[70px] flex justify-between items-center p-10 '>
+                <div className='h-[70px] flex justify-between items-center px-4 sm:px-6 lg:px-10 border-b-2 '>
                     <img src={tooth} alt="logo" className='h-10' />
                     {isopen
                         ? <MdClose className='text-[40px]' onClick={() => setIsopen(!isopen)} />
@@ -56,37 +56,37 @@ const Navbar = () => {
                     }
 
                 </div>
-                <div className={`fixed flex flex-col justify-start bg-gray-100 w-full duration-1000 ease-in-out 
+                <div className={`fixed flex flex-col gap-2 py-2 justify-evenly bg-gray-100 w-full duration-1000 ease-in-out 
                     ${isopen ? "block" : "hidden"}`}>
                     <div className='flex flex-col w-full justify-between  items-center px-[7%] lg:px-20  cursor-default'>
                         <div className='flex justify-between w-full items-center' onClick={()=>setIssubmenuopen(!issubmentopen)}>
-                            <p className='hover:underline decoration-[#93c1dd]'>Home</p>
+                            <p className='hover:underline decoration-[#93c1dd] font-18'>Home</p>
                             {issubmentopen ? <FaAngleDown /> : <FaAngleRight /> }
                             
                         </div>
-                        <div className={`px-[4%] flex flex-col justify-center items-start gap-1 w-full duration-1000 ease-in-out ${issubmentopen ? "block" : "hidden"}`}>
-                            <div className='hover:underline decoration-[#93c1dd]'>Main Home</div>
-                            <div className='hover:underline decoration-[#93c1dd]'>Orthodontic Clinic</div>
-                            <div className='hover:underline decoration-[#93c1dd]'>Dental Tourism</div>
-                            <div className='hover:underline decoration-[#93c1dd]'>General Dentist</div>
-                            <div className='hover:underline decoration-[#93c1dd]'>Customic Dentistry</div>
-                            <div className='hover:underline decoration-[#93c1dd]'>Dental Shop</div>
+                        <div className={`px-[4%] py-2 flex flex-col justify-center items-start gap-2 w-full duration-1000 ease-in-out ${issubmentopen ? "block" : "hidden"}`}>
+                            <div className='hover:underline font-18 decoration-[#93c1dd]'>Main Home</div>
+                            <div className='hover:underline font-18 decoration-[#93c1dd]'>Orthodontic Clinic</div>
+                            <div className='hover:underline font-18 decoration-[#93c1dd]'>Dental Tourism</div>
+                            <div className='hover:underline font-18 decoration-[#93c1dd]'>General Dentist</div>
+                            <div className='hover:underline font-18 decoration-[#93c1dd]'>Customic Dentistry</div>
+                            <div className='hover:underline font-18 decoration-[#93c1dd]'>Dental Shop</div>
                         </div>
                     </div>
                     <div className='flex w-full justify-between items-center lg:px-20 px-[7%] h-10 cursor-default hover:underline decoration-[#5eb2f2]'>
-                        <p>Pages</p>
+                        <p className='font-18'>Pages</p>
                         <FaAngleRight />
                     </div>
                     <div className='flex w-full justify-between items-center lg:px-20 px-[7%] h-10 cursor-default hover:underline decoration-[#5eb2f2]'>
-                        <p>Blog</p>
+                        <p className='font-18'>Blog</p>
                         <FaAngleRight />
                     </div>
                     <div className='flex w-full justify-between items-center lg:px-20 px-[7%] h-10 cursor-default hover:underline decoration-[#5eb2f2]'>
-                        <p>Shop</p>
+                        <p className='font-18'>Shop</p>
                         <FaAngleRight />
                     </div>
                     <div className='flex w-full justify-between items-center lg:px-20 px-[7%] h-10 cursor-default hover:underline decoration-[#5eb2f2]'>
-                        <p>Landing</p>
+                        <p className='font-18'>Landing</p>
                     </div>
                 </div>
             </div>
