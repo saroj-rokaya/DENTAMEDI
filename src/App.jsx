@@ -1,20 +1,16 @@
-import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
-import Footer from './Components/Footer/Footer'
-import Hero from './Components/Hero/Hero'
-import Travel from './Components/Travel/Travel'
-import Visit from './Components/Visit/Visit'
+import React from "react";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
     <>
-      <Navbar/>
-      {/* <Hero/> */}
-      <Travel/>
-      <Visit/>
-      <Footer/>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

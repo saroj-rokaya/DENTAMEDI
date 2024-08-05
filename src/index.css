@@ -6,6 +6,7 @@
 
 * {
     @apply font-['Gabarito'];
+    box-sizing: border-box;
 }
 
 @layer components {
