@@ -61,10 +61,10 @@ const Navbar = () => {
           )}
         </div>
         <div
-          className={`fixed flex flex-col gap-2 py-2 justify-evenly bg-gray-100 w-full duration-1000 ease-in-out 
+          className={`fixed flex z-10 flex-col gap-2 py-2 justify-evenly bg-gray-100 w-full duration-1000 ease-in-out 
            ${isopen ? "block" : "hidden"}`}
         >
-          <div className="flex flex-col w-full justify-between  items-center px-[7%] lg:px-20  cursor-default">
+          <div className="flex  flex-col w-full justify-between  items-center px-[7%] lg:px-20  cursor-default">
             <div
               className="flex justify-between w-full items-center"
               onClick={() => setIssubmenuopen(!issubmentopen)}
@@ -77,7 +77,7 @@ const Navbar = () => {
 
             {/* Home Dropdown Menu */}
             <div
-              className={`px-[4%] py-2 flex flex-col justify-center items-start gap-2 w-full duration-1000 ease-in-out ${
+              className={`px-[4%]   py-2 flex flex-col justify-center items-start gap-2 w-full duration-1000 ease-in-out ${
                 issubmentopen ? "block" : "hidden"
               }`}
             >
@@ -106,7 +106,7 @@ const Navbar = () => {
             <p className="font-18">Pages</p>
             <FaAngleRight />
           </div>
-          
+
           <div className="flex w-full justify-between items-center lg:px-20 px-[7%] h-10 cursor-default hover:underline decoration-[#5eb2f2]">
             <p className="font-18">Blog</p>
             <FaAngleRight />

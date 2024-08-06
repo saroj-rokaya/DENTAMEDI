@@ -27,7 +27,7 @@ const NavbarSecond = () => {
   return (
     <>
       {/* left side */}
-      <div className="relative hidden text-blue-30-0 xl:flex justify-between items-center px-10 h-14 border-t border-b border-blue-200">
+      <div className=" z-10 relative hidden text-blue-30-0 xl:flex justify-between items-center px-10 h-14 border-t border-b border-blue-200">
         <div className="flex justify-center items-center gap-10 ">
           <div
             className="h-14 text-lg  border-4 border-transparent flex justify-center items-center hover:border-b-4 hover:border-b-blue-300 cursor-pointer"

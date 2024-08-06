@@ -4,6 +4,8 @@ import scheduled from "../../../assets/scheduled.png";
 import explore from "../../../assets/explore.jpg";
 import planeTickets from "../../../assets/planeTickets.jpg";
 import transport from "../../../assets/transport.jpg";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Travel = () => {
   return (
@@ -13,7 +15,7 @@ const Travel = () => {
         <h1 className="sm:text-[65px] text-[45px] text-blue-30-0 font-semibold">
           Your Dental Travel
         </h1>
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 place-items-center gap-10 ">
+        <div data-aos="fade-up" className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 place-items-center gap-10 ">
           <div className=" flexCenter flex-col">
             <img
               src={accommodation}
